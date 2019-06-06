@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.antoi.nevent">
+
+    <application
+        android:name="com.example.antoi.nevent.GlobalClass"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_nevent"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_nevent"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Front.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Lien entre page d'authentification(Login) à la page d'accueil (Home/HomeActivity) -->
+        <activity
+            android:name=".Front.HomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".Front.LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.antoi.nevent.Front.LoginActivity" />
+        </activity>
+        <!-- Lien entre page d'authentification(Login) à la page d'inscription (Register) -->
+        <activity
+            android:name=".Front.RegisterActivity"
+            android:parentActivityName=".Front.LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.antoi.nevent.Front.LoginActivity" />
+        </activity>
+        <!-- Lien entre page d'accueil (Home/HomeActivity) à la page de création d'événement (CreateEventActivity) -->
+        <activity
+            android:name=".Front.CreateEventActivity"
+            android:parentActivityName=".Front.HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.antoi.nevent.Front.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".Front.AccountActivity"
+            android:parentActivityName=".Front.HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.antoi.nevent.Front.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".Front.JoinEventActivity"
+            android:parentActivityName=".Front.HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.antoi.nevent.Front.HomeActivity" />
+        </activity>
+        <activity android:name=".Front.TabActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".Front.HomeActivity" />
+        </activity>
+        <!-- Lien entre page d'accueil (Home/HomeActivity) à la page de modification d'événement (ModifEventActivity) -->
+        <activity
+            android:name=".Front.ModifEventActivity"
+            android:parentActivityName=".Front.HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.antoi.nevent.Front.HomeActivity" />
+        </activity>
+    </application>
+
+</manifest>

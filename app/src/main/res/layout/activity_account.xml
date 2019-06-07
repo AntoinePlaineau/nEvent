@@ -20,7 +20,9 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/account_nom"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/account_nom"
@@ -33,12 +35,15 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/account_pseudo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/account_pseudo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="32dp"
         android:background="@drawable/reg_edittext_style"
         android:ems="10"
@@ -46,12 +51,15 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/account_mail"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/account_mail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="32dp"
         android:background="@drawable/reg_edittext_style"
         android:ems="10"
@@ -59,20 +67,25 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/account_password"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/account_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="75dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="80dp"
         android:background="@drawable/reg_edittext_style"
         android:ems="10"
         android:hint="Mot de passe"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/validate_account"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/validate_account"

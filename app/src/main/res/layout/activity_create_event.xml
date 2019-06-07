@@ -13,6 +13,7 @@
         android:layout_width="268dp"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="32dp"
         android:background="@drawable/reg_edittext_style"
@@ -21,13 +22,16 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/create_event_debut"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/create_event_nom"
         android:layout_width="268dp"
         android:layout_height="47dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="32dp"
         android:background="@drawable/reg_edittext_style"
@@ -37,6 +41,8 @@
         app:layout_constraintBottom_toTopOf="@+id/create_event_lieu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -44,6 +50,7 @@
         android:layout_width="268dp"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="32dp"
         android:background="@drawable/reg_edittext_style"
@@ -52,13 +59,16 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/create_event_fin"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/create_event_fin"
         android:layout_width="268dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="32dp"
         android:background="@drawable/reg_edittext_style"
@@ -67,7 +77,9 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/create_event_description"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/createbtn"
@@ -85,13 +97,14 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.956" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/create_event_description"
         android:layout_width="268dp"
         android:layout_height="110dp"
         android:layout_marginStart="71dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="72dp"
         android:layout_marginBottom="75dp"
         android:background="@drawable/reg_edittext_style"
@@ -102,7 +115,9 @@
         app:layout_constraintBottom_toTopOf="@+id/createbtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </android.support.constraint.ConstraintLayout>
